@@ -1,7 +1,7 @@
 const express = require('express')
-const UploadController = require('../Controllers/UploadController')
+const UploadImage = require('../Controllers/UploadImage')
 
 const UploadRoute = express.Router()
-UploadRoute.get("/", UploadController)
+UploadRoute.post("/img", UploadImage)
 
 module.exports = UploadRoute
